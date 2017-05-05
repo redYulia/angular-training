@@ -1,0 +1,41 @@
+<html>
+    <head>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+          <title></title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="main.css">
+    </head>
+    
+    <body ng-app="myApp">
+        <div ng-controller="modalCtrl">
+           <modal-directive title="'Good Morning'" show="modalShown" id="1">
+               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+           </modal-directive>
+           <button ng-click="toggleModal()">Show/hide modal</button>
+           <p>Shown {{modalShown}}</p>
+        </div>
+        <div ng-controller="tabsCtrl">
+            <tab-control>
+                <tab-pane title="1">
+                    <p>55555</p>
+                </tab-pane>
+                <tab-pane title="2">
+                    <p>5557755</p>
+                </tab-pane>
+                <tab-pane title="3">
+                    <p>555655</p>
+                </tab-pane>
+                <tab-pane title="4">
+                    <p>555855</p>
+                </tab-pane>
+            </tab-control>
+        </div>
+        
+        
+        
+        
+        <script src="bower_components/angular/angular.min.js"></script> 
+        <script src="modal.js"></script>
+        <script src="tabs.js"></script>  
+    </body>
+</html>
