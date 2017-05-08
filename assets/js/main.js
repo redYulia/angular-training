@@ -7,7 +7,7 @@ app.controller('modalCtrl', function($scope) {
 });
 
 app.component('tabControl', {  
-    templateUrl: '../../tabs.html',
+    templateUrl: 'tabsTemplate',
     transclude: true,
     controller: function() {
         //console.log("i am grut");
@@ -29,7 +29,7 @@ app.component('tabControl', {
 
 app.component('tabPane', {
     transclude: true,
-    templateUrl: '../../pane.html',
+    templateUrl: 'tabPaneTemplate',
     require: {
       tabsCtrl: '^tabControl'
     },
@@ -46,7 +46,7 @@ app.component('tabPane', {
 
 app.directive("modal", function() {
     return {
-        templateUrl: '../../modal.html',
+        templateUrl: 'modalTemplate',
         replace: true,
         transclude: true,
         scope: {
