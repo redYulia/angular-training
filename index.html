@@ -3,10 +3,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="assets/css/main.css">
         <script src="bower_components/angular/angular.min.js" defer></script> 
-        <script src="modal.js" defer></script>
-        <script src="tabs.js" defer></script>  
+        <script src="assets/js/main.js" defer></script> 
     </head>
     
     <body ng-app="myApp">
@@ -17,7 +16,7 @@
            <button ng-click="toggleModal()" class="btn">Show/hide modal</button>
         </section>
         
-        <section ng-controller="tabsCtrl" class="container tabs">
+        <section class="container tabs">
             <tab-control class="clearfix">
                 <tab-pane title="1">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 1</p>
