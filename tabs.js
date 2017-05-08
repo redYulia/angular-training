@@ -33,15 +33,15 @@ angular.module("myApp").component('tabControl', {
         console.log("i am grut");
         this.panes = [];
         this.select = function(pane) {
-            angular.forEach(panes, function(pane) {
+            angular.forEach(this.panes, function(pane) {
               pane.selected = false;
             });
             pane.selected = true;
         };
         this.addPane = function(pane) {
-            /*if (panes.length === 0) {
+            if (this.panes.length === 0) {
               this.select(pane);
-            }*/
+            }
             this.panes.push(pane);
         };
     }
@@ -59,8 +59,6 @@ angular.module("myApp").component('tabPane', {
         this.$onInit = function() {
             this.tabsCtrl.addPane(this);
         };
-        /*console.log(th);
-        console.log(th.title);*/
         console.log("i work");
     }
 });

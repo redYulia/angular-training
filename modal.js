@@ -5,7 +5,7 @@ app.controller('modalCtrl', function($scope) {
         $scope.modalShown = !$scope.modalShown;
     };
 });
-app.directive("modalDirective", function() {
+app.directive("modal", function() {
     return {
         templateUrl: 'modal.html',
         replace: true,
